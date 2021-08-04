@@ -4,7 +4,7 @@ This project was made with React, Zustand, Material UI,  and React Router.
 
 ## Description
 
-Simple pokedex wrote in the librery React. It shows a list with the first 150 pokemons. Each pokemon has a name, default and shiny sprite, and its stats.
+Simple pokedex typed in the librery React. It shows a list with the first 150 pokemons. Each pokemon has a name, default and shiny sprite, and its stats.
 
 ## Available Scripts
 

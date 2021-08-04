@@ -11,7 +11,7 @@ export default function Home() {
 
     const {
         getPokemons,
-        pokemons
+        pokemons,
     } = usePokemonStore(state => ({
         getPokemons: state.getPokemons,
         pokemons: state.pokemons

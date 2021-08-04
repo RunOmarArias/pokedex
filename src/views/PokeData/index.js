@@ -12,25 +12,21 @@ export default function PokeData() {
 
     useEffect(() => {
         getPokemonData(id).catch(null);
-    }, []);
-    
-    useEffect(() => {
         getSprite(id).catch(null);
     }, []);
-
 
     return(
         <>
             <h2>Info</h2>
             <p>{`Name: ${pokemonData?.name}`}</p>
-            <p>{`Height: ${pokemonData?.height} m`}</p>
-            <p>{`weight: ${pokemonData?.weight} kg`}</p>
             <figure>
                 <img alt="sprite" src={sprite?.front_default}></img>
             </figure>
             <figure>
                 <img alt="sprite" src={sprite?.front_shiny}></img>
             </figure>
+            <p>{`Height: ${pokemonData?.height} m`}</p>
+            <p>{`weight: ${pokemonData?.weight} kg`}</p>
             <h2>stats</h2>
             <PokeStats stats={pokemonData?.stats ?? []} />
         </>

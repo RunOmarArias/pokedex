@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button'
 
 export default function PokeListItem( { name, url } ) {
 
-    const getId = () => url.split('/')[6]
+    const getId = () => url.split('/')[6];
 
     return(
         <>
